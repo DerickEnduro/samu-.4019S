@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация станка</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* На телефоне кнопки в один столбик */
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            background-color: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.1s, box-shadow 0.1s;
+            border-left: 6px solid #3498db;
+        }
+        .btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        /* Цветовые акценты для кнопок */
+        .btn-danger { border-left-color: #e74c3c; } /* Безопасность - красный */
+        .btn-warning { border-left-color: #f39c12; } /* Ошибки - оранжевый */
+        .btn-success { border-left-color: #2ecc71; } /* Обслуживание - зеленый */
+        .btn-info { border-left-color: #9b59b6; } /* Схемы - фиолетовый */
+        
+        .icon {
+            margin-right: 15px;
+            font-size: 22px;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Станок [Впишите модель]</h1>
+        <div class="subtitle">Справочник оператора</div>
+    </div>
+
+    <div class="button-grid">
+        <a href="#" class="btn btn-danger">
+            <span class="icon">🛑</span> Правила безопасности
+        </a>
+        
+        <a href="#" class="btn">
+            <span class="icon">📖</span> Инструкция по эксплуатации
+        </a>
+        
+        <a href="#" class="btn btn-warning">
+            <span class="icon">⚠️</span> Коды ошибок
+        </a>
+        
+        <a href="#" class="btn">
+            <span class="icon">📄</span> Техническая документация
+        </a>
+        
+        <a href="#" class="btn btn-info">
+            <span class="icon">⚡</span> Электрические схемы
+        </a>
+        
+        <a href="#" class="btn btn-success">
+            <span class="icon">🔧</span> Техническое обслуживание
+        </a>
+        
+        <a href="#" class="btn">
+            <span class="icon">📞</span> Контакты для связи
+        </a>
+    </div>
+
+    <div class="footer">
+        Выберите нужный раздел для получения информации.
+    </div>
+
+</body>
+</html>
